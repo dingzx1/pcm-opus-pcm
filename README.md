@@ -4,6 +4,7 @@ From \win32\VS2015\opus.sln enter the VS project. Regenerate the test_opus_encod
 If it prompts that the corresponding cpp file does not exist, drag the corresponding cpp file in the file list into the solution.
 Don't forget to modify the file path in the main function.
 In the opus_encoder.c, modify the value of complexity in the function named 'opus_encoder_init'.
+Changing the value of FRAME_SIZE，which changes the frame length of each processing. It will improve the encoding compression ratio
 ###########################################################################################################
 
 Here is another encoding and decoding method based on ffmpeg command line applied to pcm-opus-pcm：
